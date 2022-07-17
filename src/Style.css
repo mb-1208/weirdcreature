@@ -1,60 +1,87 @@
-body,html{
-    height: 100% !important;
-    margin:0 !important;
+body,
+html {
+  height: 100% !important;
+  margin: 0 !important;
 }
 
-.landing-section{
-    background: url(./assets/1.\ Landing\ Page.png);
-    background-size: 100% 100%;
-    height: 100vh;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
-.story-section{
-    background: url(./assets/2.\ Our\ Story.png);
-    background-size: 100% 100%;
-    height: 100vh;
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
 }
-.roadmap-section{
-    background-image: url('./assets/3.\ Roadmap.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 112.5%;
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #52b3e8;
 }
-.chamber-section{
-    background: url(./assets/4\ Chamber.png);
-    background-size: 100% 100%;
-    height: 100vh;
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #58a0c7;
 }
-.team-section{
-    background-image: url('./assets/5\ The\ Team.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 112.5%;
+
+.landing-section {
+  background: url(./assets/1.\ Landing\ Page.png);
+  background-size: 100% 100%;
+  height: 100vh;
 }
-.faq-section{
-    background: url(./assets/6\ Faq’s.png);
-    background-size: 100% 100%;
-    height: 100vh;
+.story-section {
+  background: url(./assets/2.\ Our\ Story.png);
+  background-size: 100% 100%;
+  height: 100vh;
 }
-.footer-section{
-    background: url(./assets/7\ Footer.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 28.125%;
+.roadmap-section {
+  background-image: url("./assets/3.\ Roadmap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 112.5%;
 }
-.floating { 
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+.chamber-section {
+  background: url(./assets/4\ Chamber.png);
+  background-size: 100% 100%;
+  height: 100vh;
 }
- 
+.team-section {
+  background-image: url("./assets/5\ The\ Team.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 112.5%;
+}
+.faq-section {
+  background: url(./assets/6\ Faq’s.png);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.footer-section {
+  background: url(./assets/7\ Footer.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 28.125%;
+}
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
 @keyframes floating {
-    0% { transform: translate(-50%,  -50%); }
-    50%  { transform: translate(-50%, -55%); }
-    100%   { transform: translate(-50%, -50%); }   
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -55%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
