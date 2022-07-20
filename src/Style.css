@@ -4,6 +4,10 @@ html {
   margin: 0 !important;
 }
 
+.link-section a {
+  cursor: pointer !important;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -25,46 +29,227 @@ html {
 }
 
 .landing-section {
+  position: relative;
   background: url(./assets/1.\ Landing\ Page.png);
   background-size: 100% 100%;
   height: 100vh;
 }
+
+/* STORY STYLE */
 .story-section {
-  background: url(./assets/2.\ Our\ Story.png);
+  position: relative;
+  background: url(./assets/2.\ OUR\ STORY/2.png);
   background-size: 100% 100%;
   height: 100vh;
 }
+.char-story-position {
+  position: absolute;
+  left: 80%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+.title-story-position {
+  /* position: absolute;
+  left: 20%;
+  top: 10%;
+  transform: translate(-50%, -50%); */
+  height: 40vh;
+  align-content: center;
+}
+.title-story-size {
+  font-size: 3.5vh;
+  color: white;
+}
+/* @media only screen and (max-height: 900px) {
+  
+} */
+
+/* ROADMAP STYLE */
 .roadmap-section {
-  background-image: url("./assets/3.\ Roadmap.png");
+  position: relative;
+  background-image: url("./assets/3.\ ROADMAP/6.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   padding-top: 112.5%;
 }
-.chamber-section {
-  background: url(./assets/4\ Chamber.png);
+.title-roadmap {
+  position: absolute;
+  width: 100%;
+  left: 10%;
+  top: 0;
+  transform: translate(-10%, -10%);
+}
+.roadmap-1 {
+  position: absolute;
+  left: 20%;
+  top: 18%;
+  transform: translate(-10%, -10%);
+}
+.roadmap-2 {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  transform: translate(-10%, -10%);
+}
+.roadmap-3 {
+  position: absolute;
+  left: 20%;
+  top: 46%;
+  transform: translate(-10%, -10%);
+}
+.roadmap-4 {
+  position: absolute;
+  left: 35%;
+  top: 59%;
+  transform: translate(-10%, -10%);
+}
+.roadmap-5 {
+  position: absolute;
+  left: 20%;
+  top: 73%;
+  transform: translate(-10%, -10%);
+}
+.title-roadmap-box {
+  font-weight: bolder;
+  background: white;
+  padding: 0.5rem;
+  color: #85ccef;
+  width: fit-content;
+}
+
+/* COLLABORATION STYLE */
+.collaboration-section {
+  position: relative;
+  background: url(./assets/4.\ COLLABORATION/1.png);
   background-size: 100% 100%;
   height: 100vh;
 }
+.char-collab-position {
+  position: absolute;
+  left: 20%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+/* TEAM STYLE */
 .team-section {
-  background-image: url("./assets/5\ The\ Team.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding-top: 112.5%;
+  position: relative;
+  background-image: url("./assets/5.\ OUR\ TEAM/1.2.png");
+  background-size: 100% 100%;
+  height: 100%;
+  padding-bottom: 1rem;
 }
+.rock-left {
+  position: absolute;
+  margin: 1rem 2rem;
+  left: 0;
+  top: 0;
+  transform: translate(-10%, -10%);
+}
+.rock-right {
+  position: absolute;
+  margin: 1rem 0;
+  right: 0;
+  top: 0;
+  transform: translate(-10%, -10%);
+}
+#content-wrapper {
+  display: block;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+#row-top {
+  color: #fff;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#row-bottom {
+  display: block;
+  width: 100%; /*only to show it isn't overflowing*/
+  height: auto;
+  flex: 1; /*take all the remaining space*/
+}
+.circle-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+  height: 16vw;
+  width: 16vw;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+.circle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.circle-box:hover {
+  transition: opacity 0.2s linear;
+  opacity: 1;
+}
+
+/* FAQ STYLE */
 .faq-section {
-  background: url(./assets/6\ Faq’s.png);
+  position: relative;
+  background: url(./assets/6.\ FAQ/2.png);
   background-size: 100% 100%;
   height: 100vh;
 }
+
+/* FOOTER STYLE */
 .footer-section {
-  background: url(./assets/7\ Footer.png);
+  position: relative;
+  background: url(./assets/7.\ FOOTER/1.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  padding-top: 28.125%;
+  padding-bottom: 28.125%;
 }
+.section-title {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2vh;
+}
+.section-title:hover {
+  text-decoration: none;
+  color: #fad9e7;
+  font-weight: bold;
+  font-size: 2vh;
+}
+.section-footer-1 {
+  position: absolute;
+  width: 100%;
+  left: 10%;
+  top: 15%;
+  transform: translate(-10%, -10%);
+}
+.section-footer-2 {
+  position: absolute;
+  width: 100%;
+  left: 10%;
+  top: 65%;
+  transform: translate(-10%, -10%);
+}
+.button-footer-submit {
+  width: 100%;
+  background: #b98fda;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bolder;
+}
+
 .floating {
   animation-name: floating;
   animation-duration: 3s;
